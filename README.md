@@ -28,4 +28,3 @@
 docker run -d -p 3001:3001 -v /video/:/home/video/ --name=zimuzu  testimg
 ```
 
-
