@@ -1,4 +1,5 @@
 FROM centos
+MAINTAINER Cyril Chan <cxhforever@gmail.com>
 RUN mkdir /home/soft/ \
 && cd /home/soft/ \
 && yum install wget -y \
