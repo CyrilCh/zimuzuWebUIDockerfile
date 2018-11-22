@@ -16,7 +16,8 @@ RUN mkdir /home/soft/ \
 && mkdir /home/app \
 && cp /home/soft/rrshareweb /home/app -r \
 && mkdir -p /home/video \
-&& mkdir -p /home/app/log 
+&& mkdir -p /home/app/log \
+&& ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime  
 COPY rrshare.json rrshare.db /home/app/rrshareweb/conf/
 # ENTRYPOINT ["/home/app/rrshareweb/rrshareweb"]
 CMD ["/home/app/rrshareweb/rrshareweb"]
